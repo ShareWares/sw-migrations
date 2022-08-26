@@ -1,0 +1,19 @@
+{
+  "name": "sw-migrations",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.7.13",
+    "node-ts": "^5.1.2",
+    "typescript": "^4.8.2"
+  },
+  "dependencies": {
+    "inquirer": "^8.2.1"
+  }
+}

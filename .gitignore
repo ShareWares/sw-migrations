@@ -1,0 +1,8 @@
+uploads/*
+node_modules
+package-lock.json
+.env
+.deployment_env
+.local_env
+.DS_Store
+daemon.txt
