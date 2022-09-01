@@ -21,15 +21,27 @@ function rightDots (str: string, len = 60) {
 	return (str + '.'.repeat(150)).substr(0, len)
 }
 
-import {
-	clrReset,
-	clrRed,
-	clrGreen,
-	clrCyan,
-	clrMagenta,
-	bgWhite,
-	clrBlack,
-} from '../../node/bin/colors'
+export const clrReset = "\x1b[0m"
+export const clrRed = "\x1b[31m"
+export const clrGreen = "\x1b[32m"
+export const clrCyan = "\x1b[36m"
+export const clrMagenta = "\x1b[35m"
+export const bgWhite = "\x1b[47m"
+export const clrBlack = "\x1b[30m"
+
+
+export function red (str) {
+	return clrRed + str + clrReset
+}
+
+export function green (str) {
+	return clrGreen + str + clrReset
+}
+
+export function cyan (str) {
+	return clrCyan + str + clrReset
+}
+
 
 export type MigraterOptions = {
 	migrationsDir: string
