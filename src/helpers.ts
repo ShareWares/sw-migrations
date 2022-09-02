@@ -7,7 +7,7 @@ export type AlertTypeMigrationOpts = {
 	upMsg: string
 	downMsg: string
 }
-
+console.log('adding a thing')
 /**
  * This function is used inside migration files
  * As we add more alert types, this helper function can be used to easily write
@@ -46,3 +46,4 @@ export function createAlertTypeMigration (opts: AlertTypeMigrationOpts) : Migrat
 
 	return migration
 }
+console.log('hi')

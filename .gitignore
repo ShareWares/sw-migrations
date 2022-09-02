@@ -6,3 +6,5 @@ package-lock.json
 .local_env
 .DS_Store
 daemon.txt
+builds.json
+dependents.json

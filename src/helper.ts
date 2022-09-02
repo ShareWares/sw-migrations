@@ -6,6 +6,6 @@ export type Product = {
 export function getProduct () : Product {
 	return {
 		id: Date.now(),
-		title: 'Product Sample'
+		title: 'Product Sample 2'
 	}
 }

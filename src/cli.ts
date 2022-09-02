@@ -105,7 +105,7 @@ export default async function run (db: DBClient, {confirmOrExit, migrationsDir, 
 			return 0
 			break;
 		case 'up':
-			console.log('Go up by one')
+			console.log('Go up by one migration')
 			results = await migrateUpOne(db)
 			break;
 		case 'down':
@@ -170,7 +170,7 @@ export default async function run (db: DBClient, {confirmOrExit, migrationsDir, 
 	}
 
 	const latest = await getLatestHistoryName(db)
-	console.log('Current version: ' + bgWhite + clrBlack + (latest || 'n/a') + clrReset)
+	console.log('Current latest migration: ' + bgWhite + clrBlack + (latest || 'n/a') + clrReset)
 
 	return 0
 }

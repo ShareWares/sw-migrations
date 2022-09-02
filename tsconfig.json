@@ -14,10 +14,8 @@
     "rootDir": "./src",
     "sourceMap": true
   },
-  "include": ["./**/helper.ts"],
   "exclude": [
     "node_modules/**/*",
-    ".vscode/**/*",
-    "build/**/*"
+    ".vscode/**/*"
   ]
 }
